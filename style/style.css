@@ -226,7 +226,7 @@ nav a:hover {
         
         grid-auto-columns: calc(100% / 3);
         width: 100%;
-        padding: 120px;
+        padding: 25px;
     }
     .carousel img {
 
