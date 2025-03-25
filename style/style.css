@@ -1,0 +1,351 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Miniver&display=swap');
+
+.miniver-regular {
+    font-family: "Miniver", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+.poppins-serif{
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+ 
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+ul, ol {
+    list-style: none;
+    padding-left: 0;
+}
+
+
+
+
+ * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+    
+    
+    
+    
+}
+
+.menu-principal{
+    padding: 1rem;
+    background-color: #ad5790;
+    color: white;
+
+}
+.produto-titulo-descricao{
+    font-size: 2rem;
+}
+.produto{
+    font-size: 1.7rem;
+    margin: 25px;
+}
+.nav-link{
+    color:aliceblue;
+    
+   
+    
+}
+a{
+    text-decoration: none; 
+    color: inherit;
+}
+nav a:hover {
+    color: yellow;  
+    text-decoration: underline;
+}
+.nav-menu{
+    display: flex;
+    justify-content:space-around;
+    padding: 0.8rem;
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-style: normal;
+}
+.nav-bar{
+    padding: 0;
+    margin: 0;
+    border: none;
+    
+}
+.intro{
+    font-family: "Miniver", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 35px;
+}
+.descricao-i{
+    margin: 13px;
+}
+.img-menu{
+    height: 27rem;
+    width: 100%;
+   
+    object-fit:cover;
+}
+.descricao{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 16px 0;
+    padding: 2rem;
+    font-family: serif;
+    font-weight: 500;
+    font-style: normal;
+    
+    background-color: white;
+} 
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    max-width: 250px; /* Garante que não fique maior que o card */
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+.card {
+   
+     /* Reduz o espaçamento interno */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 250px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    background: white;
+    border-radius: 16px;
+    scroll-snap-align: center;
+}
+
+
+.carousel {
+    display: flex;
+    
+    overflow-x: auto;
+    gap: 16px; /* Adiciona um espaçamento entre os cards */
+    
+    scroll-snap-type: x mandatory;
+    
+}
+.carousel::-webkit-scrollbar {
+    display: none; /* Esconde a barra de rolagem */
+}
+
+.carousel img {
+    width: 200px;
+    height: 260px;
+    max-width: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.news1{
+    align-items: center;
+    flex-direction: column;
+    
+    display: flex;
+    justify-content: center;
+    background-color: #b6164e;
+    margin: 32px 0 32px;
+    color: white;
+    padding: 37px;
+}
+.news{
+    align-items: center;
+    flex-direction: column;
+    
+    display: flex;
+    justify-content: center;
+    background-color: rgb(78 46 24);
+
+    color: white;
+}
+.news-p{
+    font-family: "Miniver", serif;
+    font-weight: 500;
+    height: 24px;
+    font-style: normal;
+}
+.container-formulario {
+    display: flex;
+    margin-bottom: 16px;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.titulo1{
+    
+    padding: 0.7rem;
+    
+    width: 25rem;
+    margin-top: 8px;
+    border: 0;
+    border-radius: 16px;
+    box-shadow: 0px 4px 8px rgba(128, 94, 94, 0.2);
+}
+.titulo2{
+    padding: 0.7rem;
+    justify-content: center;
+    width: 25rem;
+    margin-top: 8px;
+    border: 0;
+    border-radius: 16px;
+    background-color: rgb(250, 157, 95);
+    color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+@media screen and (max-width: 2202px) {
+    .wrapper .carousel {
+        
+        grid-auto-columns: calc(100% / 3);
+        width: 100%;
+        padding: 120px;
+    }
+    .carousel img {
+
+        width: 390px;
+        height: 260px;
+        max-width: 510px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+    .card {
+        padding: 6px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 400px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        background: white;
+        border-radius: 16px;
+        scroll-snap-align: center;
+    }
+    .news{
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 13px;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(135, 92, 63);
+
+        color: white;
+        padding: 37px;
+    }
+    
+}
+@media screen and (max-width: 1400px) {
+    .wrapper .carousel {
+        grid-auto-columns: calc(100% / 3);
+        width: 100%;
+        
+    }
+    .card {
+        padding: 6px;
+        display: flex;
+    
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 316px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        background: white;
+        border-radius: 16px;
+        scroll-snap-align: center;
+    }
+    .carousel img {
+
+        width: 309px;
+        height: 260px;
+        max-width: 500px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+    
+   
+    
+}
+@media screen and (max-width: 900px) {
+    .wrapper .carousel {
+        grid-auto-columns: calc(100% / 2);
+        width: 100%;
+    }
+    .carousel img {
+
+        width: 223px;
+        height: 260px;
+        max-width: 500px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper .carousel {
+        grid-auto-columns: 100%;
+        width: 100%;
+    }.carousel img {
+
+        width: 223px;
+        height: 260px;
+        max-width: 500px;
+        object-fit: cover;
+        border-radius: 8px;
+        
+    }
+   
+    
+}
+@media screen and (max-width: 400px) {
+    .wrapper .carousel {
+        grid-auto-columns: 100%;
+        width: 100%;
+    }.carousel img {
+
+        width: 223px;
+        height: 260px;
+        max-width: 500px;
+        object-fit: cover;
+        border-radius: 8px;
+        
+    }
+    .titulo1{
+        width: 216px;
+    }
+    .titulo2{
+        width: 216px;
+    }
+    
+}
+
+
+
+
+
