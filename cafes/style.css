@@ -1,0 +1,151 @@
+html, body {
+    height: 100vh; /* Altura total da viewport */
+    margin: 0;
+    padding: 0;
+    background-color: rgb(41, 30, 27);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Se quiser centralizar verticalmente */
+}
+
+
+.conteiner{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr  ;
+    flex-direction:row;
+    height: 500px;
+    
+    
+}
+
+.p1,.p2{
+    
+    
+    border-radius: 26px;
+    color: white;
+    height: 500px;
+    padding-bottom: 25px;
+    width: 400px;
+    margin: 15px;
+    background-color: rgb(149, 108, 99);
+}
+
+
+.img-principal{
+    
+    width:400px ;
+    height: 400px;
+    border-top-left-radius: 26px;
+    border-top-right-radius: 26px;
+    object-fit: cover;
+}
+.img-secundario{
+    width: 400px;
+    height: 400px;
+    border-top-left-radius: 26px;
+    border-top-right-radius: 26px;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+}
+.titulo-produto{
+    margin: 15px;
+}
+.descricao-produto{
+    margin: 15px;
+}
+
+p{
+    
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 17px;
+}
+h3{
+    
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      font-size: 20px;
+}
+@media screen and (min-width: 100px) and (max-width: 600px) {
+    .conteiner{
+        display: flex;
+        flex-direction:column;
+        margin: 25px;
+        
+    }
+    .img-principal{
+        width: 200px;
+        height: 400px;
+        border-top-left-radius: 26px;
+        border-top-right-radius: 26px;
+        object-fit: cover;
+        margin: 0;
+    }
+    .img-secundario{
+        width: 200px;
+        height: 400px;
+        border-top-left-radius: 26px;
+        border-top-right-radius: 26px;
+        margin: 0;
+        padding: 0;
+        object-fit: cover;
+    }
+    .p1{
+        width: 200px;
+        height: 525px;
+    }
+    .p2{
+        margin: 15px;
+        width: 250px;
+    
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 1600px) {
+
+    .conteiner{
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        align-items: center;
+        
+        
+        
+        align-items: center;
+    }
+    
+    .img-principal{
+        width: 250px;
+        height: 400px;
+        border-top-left-radius: 26px;
+        border-top-right-radius: 26px;
+        object-fit: cover;
+        margin: 0;
+    }
+    .img-secundario{
+        width: 250px;
+        height: 400px;
+        border-top-left-radius: 26px;
+        border-top-right-radius: 26px;
+        margin: 0;
+        padding: 0;
+        object-fit: cover;
+    }
+    .p1{
+        width: 250px;
+        height: 500px;
+    }
+    .p2{
+        margin: 15px;
+        width: 250px;
+    
+    }
+}
+
+
+  
